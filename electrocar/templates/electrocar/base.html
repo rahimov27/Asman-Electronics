@@ -9,10 +9,6 @@
 	<title>Asman-Electronics</title>
 <!--
 
-Template 2102 Constructive
-
-http://www.tooplate.com/view/2102-constructive
-
 -->
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">  <!-- Google web font "Open Sans" -->
 	<link rel="stylesheet" href="{% static 'css/fontawesome-all.min.css' %}">
@@ -24,7 +20,7 @@ http://www.tooplate.com/view/2102-constructive
 	<link rel="stylesheet" href="{% static '/css/video.css' %}">
 
 
-	<script>
+<script>
 		var renderPage = true;
 
 	if(navigator.userAgent.indexOf('MSIE')!==-1
@@ -33,16 +29,16 @@ http://www.tooplate.com/view/2102-constructive
    		alert("Please view this in a modern browser such as Chrome or Microsoft Edge.");
    		renderPage = false;
 	}
-	</script>
+</script>
 </head>
 <body>
 
-	 <!-- The video -->
+	 <!-- The video{% static '/videos/video.mp4' %} -->
 
-	 <video id="background-video" autoplay='true' loop='true' muted='true' poster="https://assets.codepen.io/6093409/river.jpg">
-		<source src="{% static '/videos/video.mp4' %}" type="video/mp4">
+	 <video id="background-video" autoplay='true' loop='true' muted='true' poster="https://en.skywellev.com/static/web/img/et5_banner.jpg?v=v1">
+		<source src="https://en.skywellev.com/static/web/img/et5_banner.jpg?v=v1" type="video/mp4">
 	  </video>
-  <!-- Optional: some overlay text to describe the video -->
+
 
 
   </div> 
@@ -59,7 +55,6 @@ http://www.tooplate.com/view/2102-constructive
 
 			<!-- Sidebar -->
 			<div id="tmSideBar" style="display: flex; align-items: flex-start;" class="col-xl-3 col-lg-2 col-md-12 col-sm-12 sidebar">
-
 				<button id="tmMainNavToggle" class="menu-icon">&#9776;</button>
 				<div class="inner">
 					<nav id="tmMainNav" class="tm-main-nav">
@@ -67,8 +62,7 @@ http://www.tooplate.com/view/2102-constructive
 							<li>
 								<div id="header">
 									<div class="logo1">
-									 <!-- <a href="ссылка_на_главную"> -->
-									  <img class="logo" src="{% static 'img/qwe.jpg' %}" width="300" height="220" />
+									  <img src="{% static 'img/qwe.jpg' %}" width="300" height="220" />
 									 </a>
 									</div>
 								   </div>
